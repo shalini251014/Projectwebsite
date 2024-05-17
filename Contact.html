@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="jquery-3.7.1.js"></script> 
+
+    
+
+    <title>Document</title>
+    
+       
+</head>
+<body>
+    <section id="header">
+        <a href=""><img src="./Images/./botique image.jpg"  style="height: 100px; width: 100px;" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar" >
+                <li><a  href="Home.html">Home</a></li>
+                <li><a  href="Shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="Contact.html">Contact</a></li>
+                <li><a> <i class="fa-solid fa-bag-shopping" id="shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            
+            <a> <i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+        </div>
+       </section>
+    
+
+       <section id="page-header" class="tell">
+    
+        <h2>#Lets talk</h2>
+        
+        <p>Lets talk and know about eachother</p>
+
+       </section>
+       <section id="contact" class="section-p1">
+        <div class="detail">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our locations or contact us today</h2>
+            <h3>Head office</h3>
+            <div>
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>23 Ms royal gate chennai india</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+91 7092783145, +91 8807714213</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>boutique@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>10AM to 10PM MON-SUN</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.3045582099894!2d80.0269317735713!3d13.143179211096353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5288bf09d9b8ab%3A0x8a6bab363d443a77!2sMs%20Royal%20Gate%20Main%20Rd%2C%20Palavedu%2C%20Tamil%20Nadu%20602024!5e0!3m2!1sen!2sin!4v1715532460645!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       
+       
+</section>
+
+<section id="login">
+    <h3>Login</h3>
+    <form id="loginForm" onsubmit="return validate(event)">
+        <label for="i1">Name:</label><br>
+        <input type="text" id="i1" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+
+        <label for="i2">Password:</label><br>
+        <input type="password" id="i2" name="password"><br>
+        <span id="passError" class="error"></span><br>
+
+        <label for="i3">Email:</label><br>
+        <input type="text" id="i3" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+        <button class="normal" type="submit">submit</button>
+        <p id="successMessage" class="success-message" style="display: none;">Submitted successfully</p>
+    </form>
+</section>
+    
+       
+   
+     
+<section id="pagination" class="section-p1">
+    <a href="Shop.html">1</a>
+    <a href="blog.html">2</a>
+    <a href="Home.html"><i class="fa-solid fa-arrow-right"></i></a>
+
+</section>
+
+    <section id="newsletter" class="section-p1" class="section-m1" >
+        <div class="text">
+            <h4>Sign up for Newsletter</h4><br>
+            <p>Get email update of our shop and <span>Special offers</span></p>
+        </div>
+<div class="form">
+    <input type="text" placeholder="your email address">
+    <button class="normal">Sign up</button>
+
+
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="./Images/botique image.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address</strong>213,3rd street periyar nagar kundrathur chennai-600069</p>
+            <p><strong>Phone:</strong>+91-8807714213/(+91)-7092783145</p>
+            <p><strong>Hours:</strong>10AM to 10PM Mon to Sat</p>
+            <div class="follow">
+                <h1>Follow us</h1>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and conditions</a>
+    <a href="#">Contact us</a></div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">My Account</a>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+</div>
+<div class="col-i">
+    <h4>Install App</h4>
+    <p>From App store or Google Play</p>
+    <div class="row">
+        <img src="./Images/apple image.png" alt="" style="height: 100px; width: 100px;">
+        <img src="./Images/playstore.png" alt="" style="height: 100px; width: 100px;">
+    </div>
+        <p>Secured Payment Gateways</p>
+        <img src="./Images/pay.webp" alt=""style="height: 150px; width: 150px;">
+</div>
+
+<div class="copyright">
+    @2024 Tech2etc-Html Css E-Commerce Website
+
+
+</div>
+    </footer>
+    
+
+
+
+<script>
+    function validate(event) {
+        event.preventDefault(); 
+        var n1 = document.getElementById("i1").value;
+        var n2 = document.getElementById("i2").value;
+        var n3 = document.getElementById("i3").value;
+        var alp = /^[a-zA-Z\s]+$/;
+        var pass = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+        var email = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+        var nameError = document.getElementById("nameError");
+        var passError = document.getElementById("passError");
+        var emailError = document.getElementById("emailError");
+        var successMessage = document.getElementById("successMessage");
+
+        nameError.innerHTML = "";
+        passError.innerHTML = "";
+        emailError.innerHTML = "";
+        successMessage.style.display = "none";
+
+        if (!alp.test(n1)) {
+            nameError.innerHTML = "Please enter only alphabets";
+            return false; // Prevent form submission
+        }
+        if (!pass.test(n2)) {
+            passError.innerHTML = "Please enter a valid password";
+            return false; // Prevent form submission
+        }
+        if (!email.test(n3)) {
+            emailError.innerHTML = "Please enter a valid email address";
+            return false; // Prevent form submission
+        }
+
+        // Display success message
+        successMessage.style.display = "block";
+        // Optionally, you can reset the form after submission
+        // document.getElementById("loginForm").reset();
+        return true; // Allow form submission
+    }
+</script>
+<script>
+    const bar=document.getElementById("bar");
+    const close=document.getElementById("close");
+
+    const nav=document.getElementById("navbar");
+    if(bar){
+        bar.addEventListener("click",()=>{
+            nav.classList.add("active")
+        })
+    }
+    if(close){
+        close.addEventListener("click",()=>{
+            nav.classList.remove("active")
+        })
+    }
+</script>
+</body>
+</html>

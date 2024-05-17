@@ -1,0 +1,46 @@
+<script>
+    // Define an array to store items in the cart
+    let cart = [];
+
+    // Function to add item to the cart
+    function addItemToCart(item) {
+        // Check if the item is already in the cart
+        let existingItem = cart.find(cartItem => cartItem.name === item.name);
+        if (existingItem) {
+            // If the item exists, increment its quantity
+            existingItem.quantity++;
+        } else {
+            // If the item doesn't exist, add it to the cart with quantity 1
+            cart.push({ ...item, quantity: 1 });
+        }
+        console.log(item.name + " added to cart.");
+        console.log("Current cart items: ", cart);
+    }
+</script>
+</head>
+<body>
+<!-- Your HTML content -->
+<section id="products" class="section-p1">
+    <h2>Featured products</h2>
+    <p>New collections for women</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="pexels-a-roy-14037494.jpg" style="height: 200px; width: 200px;" alt="">
+            <div class="dress">
+                <span>lehengas</span>
+                <h5>Red-colour lehenga</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i></div>
+                    <h4>Rs.2000/-</h4>
+                </div>
+                <!-- Add a button to add the item to cart -->
+                <button onclick="addItemToCart({ name: 'Red-colour lehenga', price: 2000 })">Add to Cart</button>
+            </div>
+            <!-- Repeat the same structure for other products -->
+        </div>
+    </div>
+</section>
